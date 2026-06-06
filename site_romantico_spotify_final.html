@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para Minha Nega ❤️</title>
+<style>
+body{margin:0;font-family:Arial,sans-serif;color:#fff;background:linear-gradient(#04061a,#0b1038,#1b144b);}
+.container{max-width:1000px;margin:auto;padding:40px 20px;text-align:center;}
+.card{background:rgba(255,255,255,.08);padding:25px;border-radius:18px;margin:25px 0;}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px;}
+.foto{width:100%;height:280px;object-fit:cover;border-radius:14px;cursor:pointer;transition:.3s;}
+.foto:hover{transform:scale(1.03);}
+button{padding:14px 24px;border:none;border-radius:30px;cursor:pointer;}
+#final{display:none;}
+#lightbox{display:none;position:fixed;inset:0;background:rgba(0,0,0,.9);align-items:center;justify-content:center;}
+#lightbox img{max-width:90%;max-height:90%;border-radius:12px;}
+iframe{width:100%;height:120px;border:none;border-radius:12px;}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>❤️ Para a Patrícia ❤️</h1>
+
+<div class="card">
+<p><strong>Desde o primeiro dia que você chegou no setor, eu senti que a gente ia se dar bem. Só não pensei que isso iria virar um amor tão grande, nesse nível, que nada conseguiria nos separar. Hoje eu tenho a certeza de que você é uma das melhores coisas que aconteceram na minha vida. Eu te amo demais, minha nega. ❤️</strong></p>
+</div>
+
+<div class="card">
+<h2>Nossas Memórias 📸</h2>
+<div class="gallery">
+<img src="fotos site/20260601_211246.jpg" class="foto" onclick="abrir(this.src)">
+<img src="fotos site/20260601_211248.jpg" class="foto" onclick="abrir(this.src)">
+<img src="fotos site/20260601_211304.jpg" class="foto" onclick="abrir(this.src)">
+<img src="fotos site/20260601_211318.jpg" class="foto" onclick="abrir(this.src)">
+<img src="fotos site/20260601_211408.jpg" class="foto" onclick="abrir(this.src)">
+<img src="fotos site/20260601_211417.jpg" class="foto" onclick="abrir(this.src)">
+</div>
+</div>
+
+<div class="card">
+<h2>Uma surpresa...</h2>
+<button onclick="document.getElementById('final').style.display='block';this.style.display='none';">Clique aqui ❤️</button>
+<div id="final">
+<h3>Eu sempre vou escolher você ❤️</h3>
+<p>Obrigado por cada momento, cada abraço e cada sorriso.</p>
+</div>
+</div>
+
+
+
+<div class="card">
+<h3>🎵 Nossa Música</h3>
+<p>Essa me lembra você ❤️</p>
+<a href="https://open.spotify.com/track/0A2nyIqL9VGELypstIeNU2?si=dx7lhio1TLa9tiBKBYbmmg"
+target="_blank"
+style="display:inline-block;padding:15px 28px;background:#1DB954;color:white;text-decoration:none;border-radius:30px;font-weight:bold;font-size:1.1rem;">
+💚 Ouvir a música que me faz lembrar de você
+</a>
+</div>
+
+
+
+<footer>Feito com amor ❤️</footer>
+</div>
+
+<div id="lightbox" onclick="this.style.display='none'">
+<img id="imgGrande">
+</div>
+
+<script>
+function abrir(src){
+ document.getElementById('imgGrande').src=src;
+ document.getElementById('lightbox').style.display='flex';
+}
+</script>
+</body>
+</html>
